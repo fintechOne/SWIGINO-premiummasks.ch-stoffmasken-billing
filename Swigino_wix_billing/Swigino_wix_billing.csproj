@@ -77,7 +77,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomStreamReader.cs" />
     <Compile Include="FrmRdlcBill.cs">
       <SubType>Form</SubType>
     </Compile>

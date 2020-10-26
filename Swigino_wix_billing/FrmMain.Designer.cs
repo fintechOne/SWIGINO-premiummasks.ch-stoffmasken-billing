@@ -39,6 +39,8 @@
             this.tbValues2 = new System.Windows.Forms.TextBox();
             this.tbFieldHeaders = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPathToCsv
@@ -55,7 +57,7 @@
             this.tbPathToCsv.Location = new System.Drawing.Point(127, 28);
             this.tbPathToCsv.Name = "tbPathToCsv";
             this.tbPathToCsv.ReadOnly = true;
-            this.tbPathToCsv.Size = new System.Drawing.Size(457, 20);
+            this.tbPathToCsv.Size = new System.Drawing.Size(1056, 20);
             this.tbPathToCsv.TabIndex = 0;
             // 
             // dlgOpenCsv
@@ -66,7 +68,7 @@
             // 
             // btnFileDialogCsv
             // 
-            this.btnFileDialogCsv.Location = new System.Drawing.Point(601, 26);
+            this.btnFileDialogCsv.Location = new System.Drawing.Point(1202, 26);
             this.btnFileDialogCsv.Name = "btnFileDialogCsv";
             this.btnFileDialogCsv.Size = new System.Drawing.Size(32, 23);
             this.btnFileDialogCsv.TabIndex = 2;
@@ -76,7 +78,7 @@
             // 
             // btnCsvProcessStart
             // 
-            this.btnCsvProcessStart.Location = new System.Drawing.Point(667, 25);
+            this.btnCsvProcessStart.Location = new System.Drawing.Point(1268, 25);
             this.btnCsvProcessStart.Name = "btnCsvProcessStart";
             this.btnCsvProcessStart.Size = new System.Drawing.Size(75, 23);
             this.btnCsvProcessStart.TabIndex = 3;
@@ -97,7 +99,7 @@
             this.tbValues1.Name = "tbValues1";
             this.tbValues1.ReadOnly = true;
             this.tbValues1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbValues1.Size = new System.Drawing.Size(457, 78);
+            this.tbValues1.Size = new System.Drawing.Size(1056, 78);
             this.tbValues1.TabIndex = 4;
             // 
             // tbValues2
@@ -107,7 +109,7 @@
             this.tbValues2.Name = "tbValues2";
             this.tbValues2.ReadOnly = true;
             this.tbValues2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbValues2.Size = new System.Drawing.Size(457, 78);
+            this.tbValues2.Size = new System.Drawing.Size(1056, 78);
             this.tbValues2.TabIndex = 4;
             // 
             // tbFieldHeaders
@@ -117,12 +119,12 @@
             this.tbFieldHeaders.Name = "tbFieldHeaders";
             this.tbFieldHeaders.ReadOnly = true;
             this.tbFieldHeaders.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbFieldHeaders.Size = new System.Drawing.Size(457, 78);
+            this.tbFieldHeaders.Size = new System.Drawing.Size(1056, 78);
             this.tbFieldHeaders.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(667, 325);
+            this.button1.Location = new System.Drawing.Point(1268, 325);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -130,11 +132,20 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(127, 372);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1056, 150);
+            this.dataGridView1.TabIndex = 6;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1351, 584);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbValues2);
             this.Controls.Add(this.tbFieldHeaders);
@@ -147,6 +158,7 @@
             this.Text = "SWIGINO Billing";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,6 +176,7 @@
         private System.Windows.Forms.TextBox tbValues2;
         private System.Windows.Forms.TextBox tbFieldHeaders;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
